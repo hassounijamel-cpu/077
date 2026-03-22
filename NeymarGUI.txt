@@ -1453,11 +1453,26 @@ local WindowBackground = Create("ImageLabel", MainFrame, {
     Size = UDim2.new(1, 0, 1, 0),
     Position = UDim2.new(0, 0, 0, 0),
     BackgroundTransparency = 1,
-    Image = "rbxassetid://125602848737897", 
+    Image = "rbxassetid://125602848737897",
     ImageTransparency = 0.2,
     ScaleType = Enum.ScaleType.Crop,
     ZIndex = 0
 })
+
+-- الصور
+local image1 = "rbxassetid://125602848737897"
+local image2 = "rbxassetid://99353410676626" -- حط صورة ثانية
+
+-- تبديل كل ثانيتين
+task.spawn(function()
+	while true do
+		WindowBackground.Image = image1
+		task.wait(2)
+		
+		WindowBackground.Image = image2
+		task.wait(2)
+	end
+end)
 Make("Corner", WindowBackground)
 
 Make("Gradient", MainFrame, {
