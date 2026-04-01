@@ -24,9 +24,9 @@ Themes = {
     },
     Dark = {  
         ["Color Hub 1"] = ColorSequence.new({  
-            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 20, 147)),  
-            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 105, 180)),  
-            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 20, 147))  
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 200, 180)),  
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 170, 140)),  
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 180))  
         }),  
         ["Color Hub 2"] = Color3.fromRGB(255, 20, 147),  
         ["Color Stroke"] = Color3.fromRGB(255, 182, 193),  
