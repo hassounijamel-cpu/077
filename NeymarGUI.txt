@@ -28,11 +28,11 @@ Themes = {
             ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 170, 140)),  
             ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 180))  
         }),  
-        ["Color Hub 2"] = Color3.fromRGB(255, 20, 147),  
-        ["Color Stroke"] = Color3.fromRGB(255, 182, 193),  
-        ["Color Theme"] = Color3.fromRGB(10, 10, 10),  
-        ["Color Text"] = Color3.fromRGB(255, 255, 255),  
-        ["Color Dark Text"] = Color3.fromRGB(255, 192, 203)  
+        ["Color Hub 2"] = Color3.fromRGB(255, 200, 180),  
+        ["Color Stroke"] = Color3.fromRGB(255, 170, 180),  
+        ["Color Theme"] = Color3.fromRGB(255, 220, 200),  
+        ["Color Text"] = Color3.fromRGB(255, 245, 230),  
+        ["Color Dark Text"] = Color3.fromRGB(255, 180, 160)  
     },
 }, 
 
