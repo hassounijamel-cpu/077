@@ -12,27 +12,27 @@ local redzlib = {
 Themes = {
     Darker = {
         ["Color Hub 1"] = ColorSequence.new({
-            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 200, 180)),
-            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(200, 160, 130)),
-            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(150, 120, 100))
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(120, 0, 0)),
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(160, 0, 0)),
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(180, 0, 0))
         }),
-        ["Color Hub 2"] = Color3.fromRGB(255, 200, 180),
-        ["Color Stroke"] = Color3.fromRGB(255, 170, 140),
-        ["Color Theme"] = Color3.fromRGB(255, 220, 200),
-        ["Color Text"] = Color3.fromRGB(255, 2045, 230),
-        ["Color Dark Text"] = Color3.fromRGB(255, 180, 160)
+        ["Color Hub 2"] = Color3.fromRGB(140, 0, 0),
+        ["Color Stroke"] = Color3.fromRGB(90, 0, 0),
+        ["Color Theme"] = Color3.fromRGB(170, 0, 0),
+        ["Color Text"] = Color3.fromRGB(255, 220, 220),
+        ["Color Dark Text"] = Color3.fromRGB(120, 0, 0)
     },
     Dark = {  
         ["Color Hub 1"] = ColorSequence.new({  
-            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 200, 180)),  
-            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 170, 140)),  
-            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 200, 180))  
+            ColorSequenceKeypoint.new(0.00, Color3.fromRGB(90, 0, 0)),  
+            ColorSequenceKeypoint.new(0.50, Color3.fromRGB(160, 0, 0)),  
+            ColorSequenceKeypoint.new(1.00, Color3.fromRGB(60, 0, 0))  
         }),  
-        ["Color Hub 2"] = Color3.fromRGB(255, 200, 180),  
-        ["Color Stroke"] = Color3.fromRGB(255, 170, 180),  
-        ["Color Theme"] = Color3.fromRGB(255, 220, 200),  
-        ["Color Text"] = Color3.fromRGB(255, 245, 230),  
-        ["Color Dark Text"] = Color3.fromRGB(255, 180, 160)  
+        ["Color Hub 2"] = Color3.fromRGB(150, 0, 0),  
+        ["Color Stroke"] = Color3.fromRGB(80, 0, 0),  
+        ["Color Theme"] = Color3.fromRGB(180, 0, 0),  
+        ["Color Text"] = Color3.fromRGB(255, 230, 230),  
+        ["Color Dark Text"] = Color3.fromRGB(110, 0, 0)  
     },
 }, 
 
@@ -1499,7 +1499,7 @@ local Stroke = Create("UIStroke", MainFrame, {
 local StrokeGradient = Create("UIGradient", Stroke, {
     Color = ColorSequence.new({
         ColorSequenceKeypoint.new(0, Color3.fromRGB(0, 0, 0)),        -- أسود
-        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(255, 255, 255)),-- أبيض
+        ColorSequenceKeypoint.new(0.5, Color3.fromRGB(180, 0, 0)),-- أبيض
         ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 0))         -- أسود
     }),
     Rotation = 0
@@ -1784,9 +1784,9 @@ end
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
 			Title = "إغلاق",  
-			Text = "هل حقا بدك تقفل سكربت ؟", -- رساله قفل الواجهه
+			Text = "هل حقا تريد تقفل سكربت ؟", -- رساله قفل الواجهه
 			Options = {
-				{"نعم", function()  -- باتن الموافقه ايزي يعني
+				{"اي", function()  -- باتن الموافقه ايزي يعني
 					ScreenGui:Destroy()
 				end},
 				{"لا"} -- باتن عدم الموافقه علي القفل
